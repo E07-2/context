@@ -10,7 +10,7 @@ const MyProvider = ({ children }) => {
   });
   const [extra, setExtra] = useState(false);
   const headerText = "This is my Header";
-  const footerText = "© Your Name 2022";
+  const footerText = "© 'Your Name' 2022";
 
   useEffect(() => {
     const fetchData = async () => {
