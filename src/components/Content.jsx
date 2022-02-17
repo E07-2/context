@@ -17,7 +17,7 @@ const Content = () => {
       <p key={user.id}>{user.name}</p>
     )
   );
-  return <div>{list}</div>;
+  return <section>{list}</section>;
 };
 
 export default Content;
