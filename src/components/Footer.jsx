@@ -1,9 +1,9 @@
-import React from 'react'
+import { useContext } from "react";
+import MyContext from "../context/MyContext";
 
 const Footer = () => {
-  return (
-    <div>Footer</div>
-  )
-}
+  const { footerText } = useContext(MyContext);
+  return <footer>{footerText}</footer>;
+};
 
-export default Footer
+export default Footer;
