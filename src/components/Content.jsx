@@ -4,7 +4,7 @@ import MyContext from "../context/MyContext";
 const Content = () => {
   const { extra, data } = useContext(MyContext);
   const { results, loading, error } = data;
-  
+
   if (loading) return <p>Loading ..... </p>;
   if (error) return <p>{error}</p>;
 
@@ -17,7 +17,7 @@ const Content = () => {
       <p key={user.id}>{user.name}</p>
     )
   );
-  return <div>Content</div>;
+  return <div>{list}</div>;
 };
 
 export default Content;
